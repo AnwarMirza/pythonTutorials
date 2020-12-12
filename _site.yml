@@ -2,7 +2,7 @@ name: Learn Python
 output_dir: docs
 output:
   html_document:
-    theme: yeti
+    theme: paper
     highlight: tango
 navbar:
   title: "Learn Python"
