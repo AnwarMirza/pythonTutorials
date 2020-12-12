@@ -1,0 +1,67 @@
+---
+title: "Few Minutes with Pandas"
+author: "Anwar M. Mirza"
+date: "December 11, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## What is Pandas?
+
+
+**Pandas** is a Python library, commonly used for data manipulation and analysis. Pandas has been built on top of another commonly used python library: *numpy*. Numpy is useful for performing numerical calculations involving multi-dimensional arrays. Pandas, however, is typically considered best at handling 2D tabular data involving different types of variables (integer, float, double etc.).
+
+
+```{python}
+import pandas as pd
+data = pd.DataFrame({'Country': ['Canada', 'USA', 'France', 'India', 'Japan'], 'Rank': [32, 37, 28, 23, 35]})
+data
+```
+This data can be analyzed using the ``describe()`` function:
+```{python}
+data.describe()
+```
+The ``describe()`` function gives a summary statistics of the dataframe used. To get a complete information, once can use the ``info()`` function.
+```{python}
+data.info()
+```
+
+
+## Reading Data from a CSV File
+
+The abbreviation CSV stands for *Comma Separated Values*. A CSV file a text file that used a comma to separate values. One record of data is written in one line of the file. Delimiters other than a comma are also used in CVS files. Other commonly used delimiters are tabs, spaces, semicolons, etc. This is one of the most commonly used data storage file format. Most of the commonly used data manipulation and analysis software (e.g. Microsoft Excel, Apple's Numbers, Google Sheet etc.) has the ability to save and load data from CSV files. A snapshot of a typical CVS file `fruits.csv` is given below:
+```
+Month, Apples, Pears, Oranges
+January, 10, 11, 24
+February, 11, 5, 21
+March, 5, 3, 32
+April, 12, 14, 19
+May, 15, 11, 10
+June, 22, 10, 5
+```
+The following line of pandas code can be used to read data from the csv file `fruits.csv` into a pandas dataframe df:
+```{python}
+df = pd.read_csv('./data/fruits.csv')
+df
+```
+A CVS file `fruits_tabs.csv` containing tabs as delimiters is shown below:
+```
+Month	Apples	Pears	Oranges
+January	10	11	24
+February	11	5	21
+March	5	3	32
+April	12	14	19
+May	15	11	10
+June	22	10	5
+```
+For such cases (i.e., when delimiters other than a comma are used), one needs to specify the delimiter in the pandas read_csv funcion.
+```{python}
+df = pd.read_csv('./data/fruits_tabs.csv',sep='\t')
+df
+```
+
+

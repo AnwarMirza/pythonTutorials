@@ -1,0 +1,15 @@
+---
+title: "List of Tutorials"
+author: "Anwar M. Mirza"
+date: "11/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+* [Few Minutes with Pandas](pandasShortTutorial.html)
+* [Tutorial2](docs/tutorial2.html)
+* [Tutorial3](docs/tutorial3.html)
+* [Tutorial4](docs/tutorial4.html)

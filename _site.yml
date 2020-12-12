@@ -1,14 +1,22 @@
-name: My Website
+name: Learn Python
 output_dir: docs
+output:
+  html_document:
+    theme: yeti
+    highlight: tango
 navbar:
-  title: "My Website"
+  title: "Learn Python"
   left:
     - text: "Home"
       href: index.html
+      icon: fa-home
+    - text: "Tutorials"
+      href: listOfTutorials.html
     - text: "About"
       href: about.html
+      icon: fa-book-open
   right:
-    - text: Reaadings
+    - text: Readings
       href: readings.html
       menu:
       - text: Item 1
@@ -19,3 +27,7 @@ navbar:
         href: reading_item3.html
       - text: Item 4
         href: reading_item4.html
+    - href: https:github.com/AnwarMirza
+      icon: fa-github
+    - href: https://twitter.com/anwarmmirza
+      icon: fa-twitter
