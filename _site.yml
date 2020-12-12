@@ -1,4 +1,4 @@
-name: "my-website"
+name: My Website
 output_dir: docs
 navbar:
   title: "My Website"
@@ -7,3 +7,15 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+  right:
+    - text: Reaadings
+      href: readings.html
+      menu:
+      - text: Item 1
+        href: reading_item1.html
+      - text: Item 2
+        href: reading_item2.html
+      - text: Item 3
+        href: reading_item3.html
+      - text: Item 4
+        href: reading_item4.html
