@@ -4,6 +4,9 @@ output:
   html_document:
     theme: paper
     highlight: tango
+    toc: true
+    toc_float: true
+    css: style.css
 navbar:
   title: "Learn Python"
   left:
@@ -31,3 +34,4 @@ navbar:
       icon: fa-github
     - href: https://twitter.com/anwarmmirza
       icon: fa-twitter
+
