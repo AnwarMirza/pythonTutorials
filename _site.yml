@@ -8,7 +8,7 @@ output:
     toc_float: true
     css: style.css
 navbar:
-  title: "Learn Python"
+  title: '<div><img style="width: 30px;" src="pythonLogo.png"/>Learn Python</div>'
   left:
     - text: "Home"
       href: index.html
