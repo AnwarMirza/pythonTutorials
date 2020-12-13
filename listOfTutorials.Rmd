@@ -6,6 +6,8 @@ title: "List of Tutorials"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+
 * [Few Minutes with Pandas](pandasShortTutorial.html)
 * [Tutorial2](docs/tutorial2.html)
 * [Tutorial3](docs/tutorial3.html)
