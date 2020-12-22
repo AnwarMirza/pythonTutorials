@@ -30,6 +30,9 @@ navbar:
         href: reading_item3.html
       - text: Item 4
         href: reading_item4.html
+    - text: GitHub
+      href: https://anwarmirza.github.io
+      icon: fa-github
     - href: https://www.anwarmmirza.com
       icon: fa-github
     - href: https://twitter.com/anwarmmirza
